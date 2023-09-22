@@ -25,6 +25,7 @@ public class T02 extends JFrame {
 	private ButtonGroup buttonGroup = new ButtonGroup();
 	private JRadioButton rdbtnMale,rdbtnFemale;
 	private JCheckBox chckbxHobby,chckbxHobby_1,chckbxHobby_2,chckbxHobby_3;
+	private JButton btnSubmit,btnReset;
 	/**
 	 * Launch the application.
 	 */
@@ -128,7 +129,7 @@ public class T02 extends JFrame {
 		/*---------------------------------------------------*/
 		
 		//전송버튼
-		JButton btnSubmit = new JButton("전  송");
+		btnSubmit = new JButton("전  송");
 		btnSubmit.setBounds(86, 20, 150, 40);
 		btnSubmit.addActionListener(new ActionListener() {
 			
@@ -149,9 +150,10 @@ public class T02 extends JFrame {
 			}
 		});
 		
+		
 		pn3.add(btnSubmit);
 		
-		JButton btnReset = new JButton("종  료");
+		btnReset = new JButton("종  료");
 		btnReset.setBounds(322, 20, 150, 40);
 		btnReset.addActionListener(new ActionListener() {
 			
